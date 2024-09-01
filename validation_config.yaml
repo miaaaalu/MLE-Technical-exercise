@@ -1,0 +1,9 @@
+project_id: " Advanced Analytics MLE Technical Exercise"
+table_name: "dataset/business-financial-data-march-2024-csv.csv"
+validations:
+  - name: "Check Null Fields"
+    type: "null_fields_validator"
+    fields: ['Data_value', 'Period']
+  - name: "Check Duplicates"
+    type: "duplicates_validator"
+    fields: ['Data_value', 'Period']
